@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <span a="1" b="5"></span>
+  </body>
+
+  <script>
+    function calc(a, b) {
+      return a * b;
+    }
+
+    function sum(a) {
+      return a();
+    }
+
+    const numberOne = 2;
+    const numberTwo = 5;
+
+    const numberThree = 1;
+    const numberFour = 2;
+
+    document.getElementById("calc").innerHTML = sum(calc);
+  </script>
+</html>

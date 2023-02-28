@@ -33,7 +33,7 @@ export default function Clients() {
 
   return (
     <>
-      <LinkHeader />
+      <LinkHeader updateUsers={handleGetUsers} />
       <Grid container>
         <Grid xs={12} sm={2}>
           <TextField
